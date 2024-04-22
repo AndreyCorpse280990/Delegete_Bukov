@@ -62,7 +62,7 @@ namespace Delegete_Bukov
         public static void Main(string[] args)
         {
             MyDelegate del = Add;
-            Console.WriteLine("Тестирование метода, принимающего делегат в качестве аргумента:");
+            Console.WriteLine("Вызов метода, принимающего делегат в качестве аргумента:");
             Print(del);
             
             int x = 10;
@@ -71,7 +71,7 @@ namespace Delegete_Bukov
             del += Multiplication;
             del += Division;
             
-            Console.WriteLine("\nТестирование метода multicast:");
+            Console.WriteLine("\nВызов метода multicast:");
             Multicast(del, x, y);
         }
     }
